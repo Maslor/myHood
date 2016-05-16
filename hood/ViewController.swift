@@ -18,6 +18,11 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         super.viewDidLoad()
         tableView.delegate = self
         tableView.dataSource = self
+        
+        let post = Post(imagePath: "", title: "Test", postDescription: "Test description")
+        posts.append(post)
+        
+        tableView.reloadData()
 
     }
     
